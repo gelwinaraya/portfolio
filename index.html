@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>PPW</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/3484e2c32c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+			<div class="container">
+				<div class="highlight">
+		<nav>
+		
+			<h1> <span>Gelwin</span> Araya</h1>
+			<ul>
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+		<div class="header-text">
+			<p>Graphic Designer</p>
+	<h1>Hi, I'm <span>Gelwin</span> <br>Araya From Philippines</h1>
+		</div>
+	</div>
+</div>
+</div>
+<!-- ----about -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/3rd.jpg">
+			</div>
+			<div class="about-col-2">
+			<h1 class="sub-title">About me</h1>
+			<p>I'm Gelwin Araya and I'm from the Philippines</p>
+			<div class="tab-titles">
+				<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+				<p class="tab-links"onclick="opentab('experience')">Experience</p>
+				<p class="tab-links"onclick="opentab('education')">Education</p>
+			</div>
+			<div class="tab-contents active-tab" id="skills">
+				<ul>
+					<li>
+						<span>Web Design</span></li><br>
+						<li><span>Graphic Design</span><br></li>
+				<br>
+					<li><span>Data Entry</span>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-contents" id="experience">
+				<ul>
+					<li>
+						<span>2018-2023</span><br>Technical Support</li><br>
+						<li><span>2018-2023 </span><br>Graphic Designer
+					</li>
+				</ul>
+			</div>
+			<div class="tab-contents" id="education">
+				<ul>
+					<li>
+						<span>2018-2023</span><br>Bachelor of Science in Information Technology</li><br>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- -------------service----- -->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-calendar-days"></i>
+				<h2>Event Cards </h2>
+			</div>
+			<div>
+				<i class="fa-solid fa-signs-post"></i>
+				<h2>Brand Poster </h2>
+			</div>
+			<div>
+				<i class="fa-solid fa-photo-film"></i>
+				<h2>Social Media Post</h2>
+			</div>
+			<div>
+				<i class="fa-solid fa-pen"></i>
+				<h2> Logo Design</h2>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- --------------------My Work----- -->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/1st logo.png">
+			</div>
+			<div class="work">
+				<img src="images/2nd logo.png">
+			</div>
+			<div class="work">
+				<img src="images/3rd logo crop.jpg">
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- -----------------contact--------- -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+			<h1 class="sub-title">Contact Me</h1>
+			<p><i class="fa-solid fa-envelope"></i>gelwinaraya16@gmail.com</p>
+			<p><i class="fa-solid fa-phone"></i>09556486434</p>
+			<div class="social-icons">
+				<a href="https://www.facebook.com/gelwine"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/g.l.w.n/?hl=en"><i class="fa-brands fa-instagram"></i></a>			
+			</div>
+			<a href="C:\port\images\my cv.pdf" download class="btn btn2">Download CV</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+		
+	}
+</script>
+</body>
+</html>
